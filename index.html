@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a student developer.">
+  <title>Ha Luan | Student Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">HL<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">STUDENT DEVELOPER</p>
+          <h1>Building useful things with <span>Java & web technology.</span></h1>
+          <p class="hero-text">
+            I am a student developer who enjoys learning programming, databases,
+            testing, and frontend development through practical projects.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+          </div>
+          <div class="quick-facts" aria-label="Quick facts">
+            <div><strong>4+</strong><span>Practice projects</span></div>
+            <div><strong>Java</strong><span>Main language</span></div>
+            <div><strong>SQL</strong><span>Database focus</span></div>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="photo-frame">
+            <!-- IMPORTANT: Replace profile.jpg with your own real photo before submission. -->
+            <img src="profile.jpg" alt="My profile photo">
+          </div>
+          <div class="profile-info">
+            <h2>Ha Luan</h2>
+            <p>Student Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>Learning by building.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I am developing my skills through hands-on work with Java, SQL,
+            frontend technologies, and software testing. I like turning course
+            requirements into working applications and improving them step by step.
+          </p>
+          <p>
+            My current interests include web applications, database design,
+            automation testing, and clean user interfaces.
+          </p>
+          <div class="about-tags">
+            <span>Problem solving</span>
+            <span>Database design</span>
+            <span>Automation testing</span>
+            <span>Frontend UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">SKILLS</p>
+        <h2>Tools I am learning</h2>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">☕</div><h3>Java</h3><p>OOP, collections, data structures and application logic.</p></article>
+          <article class="skill-card"><div class="skill-icon">▤</div><h3>SQL</h3><p>Queries, relational databases, keys, views and procedures.</p></article>
+          <article class="skill-card"><div class="skill-icon">&lt;/&gt;</div><h3>Web</h3><p>HTML, CSS and JavaScript for responsive frontend interfaces.</p></article>
+          <article class="skill-card"><div class="skill-icon">✓</div><h3>Testing</h3><p>Playwright automation and validation of user workflows.</p></article>
+          <article class="skill-card"><div class="skill-icon">Git</div><h3>Git / GitHub</h3><p>Version control, repositories and static website deployment.</p></article>
+          <article class="skill-card"><div class="skill-icon">UI</div><h3>UI Design</h3><p>Simple layouts, hierarchy, spacing and responsive design.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PROJECTS</p>
+            <h2>Things I have practiced</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="java">Java</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="database">Database</button>
+            <button class="filter" data-filter="testing">Testing</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-category="web" data-title="Diabetes Care Web App"
+                   data-description="A practice web application focused on patient-oriented diabetes care workflows, profile management, appointments and follow-up features."
+                   data-tech="HTML, CSS, JavaScript, Java, SQL">
+            <div class="project-number">01</div>
+            <span class="project-type">WEB APPLICATION</span>
+            <h3>Diabetes Care Web App</h3>
+            <p>Patient-centered workflows for profile, appointment and follow-up features.</p>
+            <button class="details-btn">View details →</button>
+          </article>
+
+          <article class="project-card" data-category="testing" data-title="Playwright Automation"
+                   data-description="A Java-based browser automation practice project for testing authentication and change-password workflows."
+                   data-tech="Java 21, Maven, Playwright, JUnit">
+            <div class="project-number">02</div>
+            <span class="project-type">AUTOMATION TESTING</span>
+            <h3>Playwright Automation</h3>
+            <p>Automated browser tests for login and change-password scenarios.</p>
+            <button class="details-btn">View details →</button>
+          </article>
+
+          <article class="project-card" data-category="database" data-title="SQL Database Practice"
+                   data-description="A collection of SQL exercises and database design practice covering queries, relationships and common database operations."
+                   data-tech="SQL Server, SQL">
+            <div class="project-number">03</div>
+            <span class="project-type">DATABASE</span>
+            <h3>SQL Database</h3>
+            <p>Queries, relational design, keys and database operations.</p>
+            <button class="details-btn">View details →</button>
+          </article>
+
+          <article class="project-card" data-category="java" data-title="Java Data Structures"
+                   data-description="Practice implementations and exercises covering arrays, lists, stacks, queues, trees and graph traversal."
+                   data-tech="Java, OOP, Data Structures">
+            <div class="project-number">04</div>
+            <span class="project-type">JAVA</span>
+            <h3>Java Data Structures</h3>
+            <p>Algorithms and data structure exercises built while learning Java.</p>
+            <button class="details-btn">View details →</button>
+          </article>
+        </div>
+        <p class="project-note">These are learning/practice projects. Replace or expand them with your own final project links and screenshots.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Let's connect.</h2>
+          <p class="contact-text">Have a question or want to discuss a project? Send me a message using the form.</p>
+          <div class="contact-list">
+            <a href="mailto:candydark05@gmail.com">candydark05@gmail.com</a>
+            <span>GitHub: <a href="https://github.com/luhan05" target="_blank" rel="noopener noreferrer">luhan05</a></span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="youremail@gmail.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ha Luan. Built for learning.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+      <span class="project-type">PROJECT DETAILS</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-tech" id="modalTech"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
